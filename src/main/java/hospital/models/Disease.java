@@ -4,7 +4,7 @@ public enum Disease {
 
 	INFLUENZA("Influenza", "Antiviral and pain relief medication, plenty of rest and plenty of liquids"),
 	CHOLESTEROL("High cholesterol","Cholesterol medication, limit fat intake, exercise, no smoking. Weight loss if overweight"),
-	ARRHYTHMIA("Heart arrhythmia","Antiarrhythmic medicine"),
+	ARRHYTHMIA("Heart arrhythmia","Arrhythmic medicine"),
 	BLADDER_INFECTION("Bladder infection","Seven-day course of antibiotics, plenty of liquids"),
 	OSTEOPOROSIS("Osteoporosis","Bone strength increasing medication, balanced diet with calcium and vitamin D"),
 	HYPERTENSION("Hypertension","Beta blocker medication, low-sodium and low-fat diet, avoid alcohol"),
@@ -29,6 +29,7 @@ public enum Disease {
 
 	@Override
 	public String toString() {
-		return "\nDisease: " + name + "\nTreatment: " + treatment;
+		return "\nDisease: " + name +
+				"\nTreatment: " + treatment;
 	}
 }

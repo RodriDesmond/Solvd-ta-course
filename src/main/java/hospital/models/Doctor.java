@@ -1,5 +1,7 @@
 package hospital.models;
 
+import java.util.Objects;
+
 public class Doctor extends Employee{
 
 	private Specialty speciality;
@@ -20,6 +22,18 @@ public class Doctor extends Employee{
 
 	public void setSpeciality(Specialty speciality) {
 		this.speciality = speciality;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Doctor doctor)) return false;
+		return getSpeciality() == doctor.getSpeciality();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(getSpeciality());
 	}
 
 	@Override

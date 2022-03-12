@@ -26,5 +26,6 @@ public class HospitalApplication {
 		hospital.addNurse(nurseB);
 
 		hospital.getDoctorList().forEach(System.out::println);
+		hospital.getNurseList().forEach(System.out::println);
 	}
 }
