@@ -1,4 +1,4 @@
-package hospital.models;
+package hospital.models.util;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

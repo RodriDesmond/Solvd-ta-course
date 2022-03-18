@@ -1,4 +1,6 @@
-package hospital.models;
+package hospital.models.patient;
+
+import hospital.models.staff.Doctor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -15,11 +17,7 @@ public class Appointment {
 	public Appointment() {
 	}
 
-	public Appointment(LocalDate date,
-	                   LocalTime time,
-	                   Doctor doctor,
-	                   Patient patient,
-	                   BigDecimal cost) {
+	public Appointment(LocalDate date, LocalTime time, Doctor doctor, Patient patient, BigDecimal cost) {
 		this.date = date;
 		this.time = time;
 		this.doctor = doctor;

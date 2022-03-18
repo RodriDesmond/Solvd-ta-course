@@ -1,8 +1,11 @@
-package hospital.models;
+package hospital.models.staff;
+
+import hospital.models.enums.NurseCredential;
+import hospital.models.util.Employee;
 
 import java.util.Objects;
 
-public class Nurse extends Employee{
+public class Nurse extends Employee {
 
 	private long licence;
 	private NurseCredential credential;

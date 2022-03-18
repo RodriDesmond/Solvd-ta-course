@@ -1,7 +1,7 @@
-package hospital.models;
+package hospital.models.department;
 
-import hospital.models.Doctor;
-import hospital.models.Nurse;
+import hospital.models.staff.Doctor;
+import hospital.models.staff.Nurse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +17,7 @@ public class Hospital {
 	public Hospital() {
 	}
 
-	public Hospital(String name,
-	                String address) {
+	public Hospital(String name, String address) {
 		this.name = name;
 		this.address = address;
 	}

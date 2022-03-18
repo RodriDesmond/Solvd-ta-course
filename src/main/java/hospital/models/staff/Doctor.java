@@ -1,26 +1,29 @@
-package hospital.models;
+package hospital.models.staff;
+
+import hospital.models.enums.ESpecialty;
+import hospital.models.util.Employee;
 
 import java.util.Objects;
 
-public class Doctor extends Employee{
+public class Doctor extends Employee {
 
-	private Specialty speciality;
+	private ESpecialty speciality;
 
 	public Doctor() {
 	}
 
-	public Doctor(long id, String firstName, String lastName, Specialty speciality) {
+	public Doctor(long id, String firstName, String lastName, ESpecialty speciality) {
 		super.setId(id);
 		super.setFirstName(firstName);
 		super.setLastName(lastName);
 		this.speciality = speciality;
 	}
 
-	public Specialty getSpeciality() {
+	public ESpecialty getSpeciality() {
 		return speciality;
 	}
 
-	public void setSpeciality(Specialty speciality) {
+	public void setSpeciality(ESpecialty speciality) {
 		this.speciality = speciality;
 	}
 

@@ -1,6 +1,6 @@
-package hospital.models;
+package hospital.models.enums;
 
-public enum Disease {
+public enum EDisease {
 
 	INFLUENZA("Influenza", "Antiviral and pain relief medication, plenty of rest and plenty of liquids"),
 	CHOLESTEROL("High cholesterol","Cholesterol medication, limit fat intake, exercise, no smoking. Weight loss if overweight"),
@@ -14,7 +14,7 @@ public enum Disease {
 	private final String name;
 	private final String treatment;
 
-	private Disease(String name, String treatment){
+	private EDisease(String name, String treatment){
 		this.name = name;
 		this.treatment = treatment;
 	}

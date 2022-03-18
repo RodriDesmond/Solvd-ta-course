@@ -1,12 +1,13 @@
-package hospital.models;
+package hospital.models.patient;
 
-import hospital.models.Disease;
+
+import hospital.models.enums.EDisease;
 
 import java.time.LocalDate;
 
 public class Diagnostic {
 
 	private LocalDate date;
-	private Disease disease;
+	private EDisease disease;
 	private String prognosis;
 }

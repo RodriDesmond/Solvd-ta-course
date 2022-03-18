@@ -1,6 +1,6 @@
-package hospital.models;
+package hospital.models.enums;
 
-public enum Specialty {
+public enum ESpecialty {
 	GEN_SUR ("General Surgery"),
 	PAED ("Paediatrics"),
 	CARD("Cardiology"),
@@ -8,7 +8,7 @@ public enum Specialty {
 
 	private final String specialtyName;
 
-	Specialty(String specialty) { this.specialtyName = specialty;}
+	ESpecialty(String specialty) { this.specialtyName = specialty;}
 
 	public String getSpecialty() {
 		return specialtyName;

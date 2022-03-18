@@ -1,4 +1,4 @@
-package hospital.models;
+package hospital.models.enums;
 
 public enum NurseCredential {
 

@@ -1,13 +1,13 @@
-package hospital.models;
+package hospital.models.enums;
 
-public enum Gender {
+public enum EGender {
 
 	M("Male"),
 	F("Female");
 
 	private final String eGender;
 
-	Gender (String gender) {this.eGender = gender;}
+	EGender(String gender) {this.eGender = gender;}
 
 	public String geteGender() {
 		return eGender;

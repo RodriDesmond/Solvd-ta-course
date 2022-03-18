@@ -1,4 +1,6 @@
-package hospital.models;
+package hospital.models.department;
+
+import hospital.models.staff.Pharmacist;
 
 import java.util.ArrayList;
 import java.util.List;

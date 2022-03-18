@@ -1,6 +1,8 @@
-package hospital.models;
+package hospital.models.staff;
 
-public class Pharmacist extends Employee{
+import hospital.models.util.Employee;
+
+public class Pharmacist extends Employee {
 
 	private long licence;
 

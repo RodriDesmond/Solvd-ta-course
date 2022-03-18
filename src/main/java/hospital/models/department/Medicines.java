@@ -1,4 +1,4 @@
-package hospital.models;
+package hospital.models.department;
 
 public class Medicines {
 

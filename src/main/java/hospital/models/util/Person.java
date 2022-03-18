@@ -1,6 +1,6 @@
-package hospital.models;
+package hospital.models.util;
 
-import hospital.models.Gender;
+import hospital.models.enums.EGender;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ public abstract class Person {
 	private String firstName;
 	private String lastName;
 	private LocalDate birthDate;
-	private Gender gender;
+	private hospital.models.enums.EGender EGender;
 	private String telephone;
 
 	protected Person() {
@@ -54,12 +54,12 @@ public abstract class Person {
 		this.birthDate = birthDate;
 	}
 
-	public Gender getGender() {
-		return gender;
+	public EGender getGender() {
+		return EGender;
 	}
 
-	public void setGender(Gender gender) {
-		this.gender = gender;
+	public void setGender(EGender EGender) {
+		this.EGender = EGender;
 	}
 
 	public String getTelephone() {
