@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Hospital {
 
-
 	private String name;
 	private String address;
 	private List<Doctor> doctorList = new ArrayList<>();
@@ -68,5 +67,12 @@ public class Hospital {
 
 	public void removeNurse(Nurse nurse) {
 		this.getNurseList().remove(nurse);
+	}
+
+	@Override
+	public String toString() {
+		return "\nHospital information. " +
+				"\nName: '" + name +
+				"\nAddress: '" + address;
 	}
 }

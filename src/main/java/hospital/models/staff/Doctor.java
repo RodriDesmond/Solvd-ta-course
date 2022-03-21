@@ -41,8 +41,8 @@ public class Doctor extends Employee {
 
 	@Override
 	public String toString() {
-		return "\nDoctor Information:\n" +
+		return "\nDoctors Information:" +
 				super.toString() +
-				"\nspeciality= " + speciality.getSpecialty();
+				"\nSpeciality: " + speciality.getSpecialty() + "\n";
 	}
 }

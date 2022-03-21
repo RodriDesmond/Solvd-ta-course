@@ -73,8 +73,8 @@ public abstract class Person {
 	@Override
 	public String toString() {
 		return
-				"id= " + id +
-				"\nfirstName= " + firstName  +
-				"\nlastName= " + lastName ;
+				"\nid: " + id +
+				"\nFirst name: " + firstName  +
+				"\nLast name: " + lastName;
 	}
 }

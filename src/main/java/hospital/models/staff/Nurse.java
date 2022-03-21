@@ -35,9 +35,9 @@ public class Nurse extends Employee {
 
 	@Override
 	public String toString() {
-		return "\nNurse Information: " +
+		return "\nNurses Information: " +
 				super.toString() +
-				"\nlicence= " + licence +
-				"\ncredential= " + credential.geteCredential();
+				"\nLicence: " + licence +
+				"\nCredential: " + credential.geteCredential() + "\n";
 	}
 }

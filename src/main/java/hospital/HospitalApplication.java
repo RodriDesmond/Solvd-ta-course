@@ -5,11 +5,14 @@ import hospital.models.enums.NurseCredential;
 import hospital.models.enums.ESpecialty;
 import hospital.models.staff.Doctor;
 import hospital.models.staff.Nurse;
+import org.apache.log4j.Logger;
+
 
 public class HospitalApplication {
 
 	public static void main (String[] args) {
-		System.out.println("Starting program");
+
+		final Logger LOGGER = Logger.getLogger(HospitalApplication.class);
 
 		//initializing Private Hospitals
 		Hospital hospital = new Hospital("Hospital 1", "Evergreen St. 123");
@@ -25,7 +28,8 @@ public class HospitalApplication {
 		hospital.addNurse(nurseA);
 		hospital.addNurse(nurseB);
 
-		hospital.getDoctorList().forEach(System.out::println);
-		hospital.getNurseList().forEach(System.out::println);
+		LOGGER.info(hospital.toString());
+		LOGGER.info(hospital.getDoctorList());
+		LOGGER.info(hospital.getNurseList());
 	}
 }
