@@ -4,20 +4,20 @@ import hospital.models.util.Person;
 
 public class Patient extends Person {
 
-	private long id;
 	private String healthInsuranceCompany;
 	private MedicalRecord medicalRecord;
 	private boolean medicalDischarge;
 
-	@Override
-	public long getId() {
-		return id;
+	public Patient(long id,
+	               String firstName,
+	               String lastName,
+	               String healthInsuranceCompany) {
+		super.setId(id);
+		super.setFirstName(firstName);
+		super.setLastName(lastName);
+		this.healthInsuranceCompany = healthInsuranceCompany;
 	}
 
-	@Override
-	public void setId(long id) {
-		this.id = id;
-	}
 
 	public String getHealthInsuranceCompany() {
 		return healthInsuranceCompany;

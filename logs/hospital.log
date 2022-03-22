@@ -1,0 +1,12 @@
+[2022-03-21 21:32:59,614][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Hospital 1
+address: Evergreen St. 123
+[2022-03-21 21:32:59,615][INFO ][main][HospitalApplication] 
+MedicalRecord 1: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-21
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+false

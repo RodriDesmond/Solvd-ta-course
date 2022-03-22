@@ -9,7 +9,7 @@ public enum EDisease {
 	OSTEOPOROSIS("Osteoporosis","Bone strength increasing medication, balanced diet with calcium and vitamin D"),
 	HYPERTENSION("Hypertension","Beta blocker medication, low-sodium and low-fat diet, avoid alcohol"),
 	CONJUNCTIVITIS("Conjunctivitis","Eye drops or artificial tears. Avoid close contact with other people"),
-	GASTRITIS("Gastritis","Antacid medication, anti-inflammayory drugs. Avoid spicy food and alcohol");
+	GASTRITIS("Gastritis","Antacid medication, anti-inflammatory drugs. Avoid spicy food and alcohol");
 
 	private final String name;
 	private final String treatment;
@@ -29,7 +29,7 @@ public enum EDisease {
 
 	@Override
 	public String toString() {
-		return "\nDisease: " + name +
-				"\nTreatment: " + treatment;
+		return "\ndisease: " + name +
+				"\ntreatment: " + treatment;
 	}
 }

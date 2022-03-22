@@ -71,8 +71,8 @@ public class Hospital {
 
 	@Override
 	public String toString() {
-		return "\nHospital information. " +
-				"\nName: '" + name +
-				"\nAddress: '" + address;
+		return "\nHospital information: " +
+				"\nname: " + name +
+				"\naddress: " + address;
 	}
 }
