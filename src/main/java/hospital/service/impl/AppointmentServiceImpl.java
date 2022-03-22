@@ -13,8 +13,9 @@ import java.time.LocalTime;
 public class AppointmentServiceImpl implements AppointmentService {
 
 	@Override
-	public void saveAppointment(
+	public Appointment saveAppointment(
 			Hospital hospital,LocalDate date,LocalTime time,Doctor doctor,Patient patient,BigDecimal cost) {
 		Appointment appointment = new Appointment(hospital, date, time, doctor, patient, cost);
+		return appointment;
 	}
 }

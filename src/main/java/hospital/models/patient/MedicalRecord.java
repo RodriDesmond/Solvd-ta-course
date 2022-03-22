@@ -69,6 +69,6 @@ public class MedicalRecord {
 		return "\nMedicalRecord " + id + ": " +
 				"\ndoctor: "  + doctor.getLastName().toUpperCase() + ", " + doctor.getFirstName() +
 				"\nDiagnostic: " + diagnostic +
-				"\n" + medicalDischarge;
+				"\nMedical Discharged: " + medicalDischarge;
 	}
 }

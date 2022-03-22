@@ -1,9 +1,11 @@
 package hospital;
 
+import hospital.exceptions.AppointmentNotFoundException;
 import hospital.models.department.Hospital;
 import hospital.models.enums.EDisease;
 import hospital.models.enums.NurseCredential;
 import hospital.models.enums.ESpecialty;
+import hospital.models.patient.Appointment;
 import hospital.models.patient.Diagnostic;
 import hospital.models.patient.Patient;
 import hospital.models.staff.Doctor;
@@ -19,7 +21,7 @@ import java.time.LocalTime;
 
 public class HospitalApplication {
 
-	public static void main (String[] args) {
+	public static void main (String[] args) throws AppointmentNotFoundException {
 
 		final Logger LOGGER = Logger.getLogger(HospitalApplication.class);
 
@@ -28,7 +30,8 @@ public class HospitalApplication {
 		final AppointmentServiceImpl appointment = new AppointmentServiceImpl();
 
 		//initializing Private Hospitals
-		Hospital hospital = new Hospital("Hospital 1", "Evergreen St. 123");
+		Hospital hospital = new Hospital("Princeton-Plainsboro Teaching Hospital", "123 Fake Street, 740 Evergreen Terrace");
+		LOGGER.info(hospital.toString());
 
 		//initializing employees
 		Doctor docA = new Doctor (1L,"Morty","Smith", ESpecialty.CARD);
@@ -46,16 +49,26 @@ public class HospitalApplication {
 		Patient patientB = new Patient(2L,"Jane","Doe","OSDE");
 
 		//Appointments
-		appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docA,patientA, BigDecimal.valueOf(2000));
-		appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docB,patientB, BigDecimal.valueOf(2000));
+		Appointment appointment1 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docA,patientA, BigDecimal.valueOf(2000));
+		Appointment appointment2 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docB,patientB, BigDecimal.valueOf(2000));
 
 		//patients medical records
-		treatment.createMedicalRecord(1L,patientA,docA);
+		//treatment.createMedicalRecord(1L,patientA,docA);
+
+		//Treat Patient
+		try {
+			treatment.treatPatient(appointment1, patientA, docA);
+		} catch(AppointmentNotFoundException e) {
+			LOGGER.error(e.getMessage());
+		}
 
 		//set diagnostic to patient
 		patientA.getMedicalRecord().setDiagnostic(treatment.Diagnosis(LocalDate.now(), EDisease.INFLUENZA, patientA));
+		LOGGER.info("Patient " + patientA.getFirstName() + " " + patientA.getLastName() + patientA.getMedicalRecord());
 
-		LOGGER.info(hospital.toString());
-		LOGGER.info(patientA.getMedicalRecord());
+		LOGGER.info("Patient was diagnosed with " + patientA.getMedicalRecord().getDiagnostic().getDisease().getName());
+
+		treatment.curePatient(patientA);
+		LOGGER.info("Medical Discharged: " + patientA.getMedicalRecord().isMedicalDischarge());
 	}
 }

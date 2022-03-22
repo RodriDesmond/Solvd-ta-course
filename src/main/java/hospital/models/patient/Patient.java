@@ -6,7 +6,6 @@ public class Patient extends Person {
 
 	private String healthInsuranceCompany;
 	private MedicalRecord medicalRecord;
-	private boolean medicalDischarge;
 
 	public Patient(long id,
 	               String firstName,
@@ -33,13 +32,5 @@ public class Patient extends Person {
 
 	public void setMedicalRecord(MedicalRecord medicalRecord) {
 		this.medicalRecord = medicalRecord;
-	}
-
-	public boolean isMedicalDischarge() {
-		return medicalDischarge;
-	}
-
-	public void setMedicalDischarge(boolean medicalDischarge) {
-		this.medicalDischarge = medicalDischarge;
 	}
 }
