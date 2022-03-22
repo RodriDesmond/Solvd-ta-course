@@ -13,18 +13,18 @@ import hospital.models.staff.Doctor;
 import hospital.models.staff.Nurse;
 import hospital.service.impl.AppointmentServiceImpl;
 import hospital.service.impl.TreatmentServiceImpl;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-
 public class HospitalApplication {
 
-	public static void main (String[] args) throws AppointmentNotFoundException {
+	private static final Logger LOGGER = LogManager.getLogger(HospitalApplication.class);
 
-		final Logger LOGGER = Logger.getLogger(HospitalApplication.class);
+	public static void main (String[] args) throws AppointmentNotFoundException {
 
 		final TreatmentServiceImpl treatment = new TreatmentServiceImpl();
 		final AppointmentServiceImpl appointment = new AppointmentServiceImpl();

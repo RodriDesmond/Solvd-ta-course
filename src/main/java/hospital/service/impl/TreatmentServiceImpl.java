@@ -8,14 +8,15 @@ import hospital.models.patient.MedicalRecord;
 import hospital.models.patient.Patient;
 import hospital.models.staff.Doctor;
 import hospital.service.TreatmentService;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 import java.util.Random;
 
 public class TreatmentServiceImpl implements TreatmentService {
 
-	private static final Logger LOGGER = Logger.getLogger(TreatmentServiceImpl.class);
+	private static final Logger LOGGER = LogManager.getLogger(TreatmentServiceImpl.class);
 	Random random = new Random();
 
 	@Override
