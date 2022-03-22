@@ -4,7 +4,8 @@ public enum ESpecialty {
 	GEN_SUR ("General Surgery"),
 	PAED ("Paediatrics"),
 	CARD("Cardiology"),
-	DERM("Dermatology");
+	DERM("Dermatology"),
+	DIAG_MED("Diagnostic Medicine");
 
 	private final String specialtyName;
 

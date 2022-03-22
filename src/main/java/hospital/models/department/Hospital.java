@@ -1,5 +1,6 @@
 package hospital.models.department;
 
+import hospital.exceptions.EmployeeNotFoundException;
 import hospital.models.staff.Doctor;
 import hospital.models.staff.Nurse;
 
@@ -58,7 +59,12 @@ public class Hospital {
 	}
 
 	public void removeDoctor(Doctor doctor) {
-		this.getDoctorList().remove(doctor);
+
+		if (this.getDoctorList().contains(doctor)) {
+			this.getDoctorList().remove(doctor);
+		} else {
+			throw new EmployeeNotFoundException("Employee not found.");
+		}
 	}
 
 	public void addNurse(Nurse nurse) {

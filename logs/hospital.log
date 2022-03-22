@@ -650,3 +650,258 @@ Medical Discharged: false
 [2022-03-22 00:35:17,871][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
 [2022-03-22 00:35:17,871][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
 [2022-03-22 00:35:17,871][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:12:12,524][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:12:12,571][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:12:12,586][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 49: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:12:12,586][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:12:12,586][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:12:12,602][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:13:05,273][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:13:05,304][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:13:05,335][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 22: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:13:05,335][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:13:05,335][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:13:05,335][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:13:05,335][INFO ][main][HospitalApplication] 
+Doctors Information:
+ID: 3
+First name: Gregory
+Last name: House
+Speciality: Diagnostic Medicine
+
+[2022-03-22 09:13:06,538][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:13:06,570][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:13:06,601][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 61: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:13:06,601][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:13:06,601][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:13:06,601][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:13:06,617][INFO ][main][HospitalApplication] 
+Doctors Information:
+ID: 3
+First name: Gregory
+Last name: House
+Speciality: Diagnostic Medicine
+
+[2022-03-22 09:13:37,131][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:13:37,146][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:13:37,162][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 72: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:13:37,162][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:13:37,178][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:13:37,178][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:14:23,306][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:14:23,322][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:14:23,337][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 84: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:14:23,337][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:14:23,337][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:14:23,337][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:15:31,174][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:15:31,221][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:15:31,248][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 61: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:15:31,249][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:15:31,251][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:15:31,254][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:16:03,582][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:16:03,609][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:16:03,627][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 5: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:16:03,629][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:16:03,630][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:16:03,631][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:21:28,812][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:21:28,832][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:21:28,854][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 34: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:21:28,855][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:21:28,856][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:21:28,858][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:22:41,790][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:22:41,808][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:22:41,829][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 28: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:22:41,830][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:22:41,831][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:22:41,833][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:23:16,852][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:23:16,877][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:23:16,895][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 97: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:23:16,896][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:23:16,896][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:23:16,899][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:23:37,679][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:23:37,698][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:23:37,720][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 55: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:23:37,720][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:23:37,721][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:23:37,722][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:23:37,723][ERROR][main][HospitalApplication] hospital.exceptions.EmployeeNotFoundException: Employee not found.
+[2022-03-22 09:23:55,521][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:23:55,543][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:23:55,561][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 3: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:23:55,562][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:23:55,563][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:23:55,565][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:23:55,565][ERROR][main][HospitalApplication] Employee not found.
+[2022-03-22 09:27:56,201][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:27:56,226][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:27:56,228][ERROR][main][HospitalApplication] Appointment not found
+[2022-03-22 09:27:56,264][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 80: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:27:56,264][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:27:56,265][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:27:56,266][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:27:56,266][ERROR][main][HospitalApplication] Employee not found.
+[2022-03-22 09:41:14,177][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:41:14,188][ERROR][main][HospitalApplication] Patient can't be appointment without a Health Insurance Company
+[2022-03-22 09:42:36,642][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:42:36,652][ERROR][main][HospitalApplication] hospital.exceptions.HealthInsuranceCompanyException: Patient can't be appointment without a Health Insurance Company
+[2022-03-22 09:45:15,183][INFO ][main][HospitalApplication] 
+Hospital information: 
+name: Princeton-Plainsboro Teaching Hospital
+address: 123 Fake Street, 740 Evergreen Terrace
+[2022-03-22 09:45:15,194][ERROR][main][HospitalApplication] hospital.exceptions.HealthInsuranceCompanyException: Patient can't be appointment without a Health Insurance Company
+[2022-03-22 09:45:15,202][INFO ][main][TreatmentServiceImpl] Appointment 2022-03-22. Patient John Doe was treated by the doctor Smith
+[2022-03-22 09:45:15,203][ERROR][main][HospitalApplication] Appointment not found
+[2022-03-22 09:45:15,227][INFO ][main][HospitalApplication] Patient John Doe
+MedicalRecord 35: 
+doctor: SMITH, Morty
+Diagnostic: 
+date: 2022-03-22
+disease: Influenza
+treatment: Antiviral and pain relief medication, plenty of rest and plenty of liquids
+Medical Discharged: false
+[2022-03-22 09:45:15,227][INFO ][main][HospitalApplication] Patient was diagnosed with Influenza
+[2022-03-22 09:45:15,228][INFO ][main][TreatmentServiceImpl] Patient John Doe no longer need to receive inpatient care and can go home.
+[2022-03-22 09:45:15,230][INFO ][main][HospitalApplication] Medical Discharged: true
+[2022-03-22 09:45:15,230][ERROR][main][HospitalApplication] Employee not found.
