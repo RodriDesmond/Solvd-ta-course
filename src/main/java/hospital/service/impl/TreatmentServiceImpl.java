@@ -26,7 +26,7 @@ public class TreatmentServiceImpl implements TreatmentService {
 	}
 
 	@Override
-	public Diagnostic Diagnosis(LocalDate date, EDisease disease, Patient patient) {
+	public Diagnostic diagnosis(LocalDate date, EDisease disease, Patient patient) {
 		Diagnostic diag = new Diagnostic(date,disease);
 		diag.setPatient(patient);
 		return diag;

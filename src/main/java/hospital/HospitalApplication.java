@@ -73,7 +73,7 @@ public class HospitalApplication {
 		}
 
 		//Diagnose patient
-		patientA.getMedicalRecord().setDiagnostic(treatment.Diagnosis(LocalDate.now(), EDisease.INFLUENZA, patientA));
+		patientA.getMedicalRecord().setDiagnostic(treatment.diagnosis(LocalDate.now(), EDisease.INFLUENZA, patientA));
 		LOGGER.info("Patient " + patientA.getFirstName() + " " + patientA.getLastName() + patientA.getMedicalRecord());
 
 		LOGGER.info("Patient was diagnosed with " + patientA.getMedicalRecord().getDiagnostic().getDisease().getName());

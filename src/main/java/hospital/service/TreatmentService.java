@@ -13,7 +13,7 @@ public interface TreatmentService {
 
 	void createMedicalRecord(long id, Patient patient, Doctor doctor);
 
-	Diagnostic Diagnosis(LocalDate date, EDisease disease, Patient patient);
+	Diagnostic diagnosis(LocalDate date, EDisease disease, Patient patient);
 
 	void treatPatient(Appointment appointment, Patient patient, Doctor doctor) throws AppointmentNotFoundException;
 
