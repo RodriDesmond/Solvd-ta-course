@@ -1,5 +1,6 @@
 package hospital;
 
+import Collection.HospitalEmployeesLinkedList;
 import hospital.exceptions.AppointmentNotFoundException;
 import hospital.exceptions.EmployeeNotFoundException;
 import hospital.exceptions.HealthInsuranceCompanyException;
@@ -11,6 +12,7 @@ import hospital.models.patient.Appointment;
 import hospital.models.patient.Patient;
 import hospital.models.staff.Doctor;
 import hospital.models.staff.Nurse;
+import hospital.models.util.Employee;
 import hospital.service.impl.AppointmentServiceImpl;
 import hospital.service.impl.TreatmentServiceImpl;
 import org.apache.logging.log4j.LogManager;
@@ -88,5 +90,16 @@ public class HospitalApplication {
 		} catch (EmployeeNotFoundException e) {
 			LOGGER.error(e.getMessage());
 		}
+
+		/* HomeTask 5
+		* Generate a List of Employees using a custom LinkedList with generics
+		* */
+		HospitalEmployeesLinkedList<Employee> employeesList = new HospitalEmployeesLinkedList<Employee>();
+		employeesList.add(docA);
+		employeesList.add(docB);
+		employeesList.add(nurseA);
+		employeesList.add(nurseB);
+		LOGGER.info(employeesList.iterate());
 	}
+
 }
