@@ -1,6 +1,6 @@
 package hospital;
 
-import Collection.HospitalEmployeesLinkedList;
+import collection.HospitalEmployeesLinkedList;
 import hospital.exceptions.AppointmentNotFoundException;
 import hospital.exceptions.EmployeeNotFoundException;
 import hospital.exceptions.HealthInsuranceCompanyException;
@@ -26,7 +26,7 @@ public class HospitalApplication {
 
 	private static final Logger LOGGER = LogManager.getLogger(HospitalApplication.class);
 
-	public static void main (String[] args) throws AppointmentNotFoundException {
+	public static void main(String[] args) throws AppointmentNotFoundException {
 
 		final TreatmentServiceImpl treatment = new TreatmentServiceImpl();
 		final AppointmentServiceImpl appointment = new AppointmentServiceImpl();
@@ -36,12 +36,12 @@ public class HospitalApplication {
 		LOGGER.info(hospital.toString());
 
 		//initializing employees
-		Doctor docA = new Doctor (1L,"Morty","Smith", ESpecialty.CARD);
-		Doctor docB = new Doctor (2L,"Tammy","Guetermann", ESpecialty.GEN_SUR);
-		Doctor docC = new Doctor (3L,"Gregory","House", ESpecialty.DIAG_MED);
+		Doctor docA = new Doctor(1L, "Morty", "Smith", ESpecialty.CARD);
+		Doctor docB = new Doctor(2L, "Tammy", "Guetermann", ESpecialty.GEN_SUR);
+		Doctor docC = new Doctor(3L, "Gregory", "House", ESpecialty.DIAG_MED);
 
-		Nurse nurseA = new Nurse (1L,"Jerry", "Smith", 54634L, NurseCredential.STAFF_NURSE);
-		Nurse nurseB = new Nurse (2L,"Rick", "Sanchez", 67867L, NurseCredential.STAFF_NURSE);
+		Nurse nurseA = new Nurse(1L, "Jerry", "Smith", 54634L, NurseCredential.STAFF_NURSE);
+		Nurse nurseB = new Nurse(2L, "Rick", "Sanchez", 67867L, NurseCredential.STAFF_NURSE);
 
 		//Adding employee's to the Hospital
 		hospital.addDoctor(docA);
@@ -50,19 +50,19 @@ public class HospitalApplication {
 		hospital.addNurse(nurseB);
 
 		//initializing patients
-		Patient patientA = new Patient(1L,"John","Doe","OSDE");
-		Patient patientB = new Patient(2L,"Jane","Doe","OSDE");
-		Patient patientC = new Patient(2L,"Walter","White","");
+		Patient patientA = new Patient(1L, "John", "Doe", "OSDE");
+		Patient patientB = new Patient(2L, "Jane", "Doe", "OSDE");
+		Patient patientC = new Patient(2L, "Walter", "White", "");
 
 		//Appointments
-		Appointment appointment1 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docA,patientA, BigDecimal.valueOf(2000));
-		Appointment appointment2 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docB,patientB, BigDecimal.valueOf(2000));
+		Appointment appointment1 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(), docA, patientA, BigDecimal.valueOf(2000));
+		Appointment appointment2 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(), docB, patientB, BigDecimal.valueOf(2000));
 
 		//Trying to appoint a client without Health Insurance Company
 		try {
 
-			Appointment appointment3 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(),docB,patientC, BigDecimal.valueOf(2000));
-		}catch (HealthInsuranceCompanyException e) {
+			Appointment appointment3 = appointment.saveAppointment(hospital, LocalDate.now(), LocalTime.now(), docB, patientC, BigDecimal.valueOf(2000));
+		} catch (HealthInsuranceCompanyException e) {
 			LOGGER.error(e);
 		}
 
@@ -70,7 +70,7 @@ public class HospitalApplication {
 		try {
 			treatment.treatPatient(appointment1, patientA, docA);
 			treatment.treatPatient(appointment2, patientA, docB);
-		} catch(AppointmentNotFoundException e) {
+		} catch (AppointmentNotFoundException e) {
 			LOGGER.error(e.getMessage());
 		}
 
