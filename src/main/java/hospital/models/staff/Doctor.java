@@ -5,7 +5,7 @@ import hospital.models.util.Employee;
 
 import java.util.Objects;
 
-public class Doctor extends Employee {
+public class Doctor extends Employee implements Runnable {
 
 	private ESpecialty speciality;
 
@@ -45,4 +45,9 @@ public class Doctor extends Employee {
 				super.toString() +
 				"\nSpeciality: " + speciality.getSpecialty() + "\n";
 	}
+
+    @Override
+    public void run() {
+        System.out.println("Doctor " + super.getFirstName() + " " + super.getLastName() + " is working");
+    }
 }
