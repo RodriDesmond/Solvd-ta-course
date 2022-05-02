@@ -28,7 +28,6 @@ public class ReflectionExample {
         //Get class constructors
         Constructor[] constructor = Doctor.class.getDeclaredConstructors();
 
-
         //Get class fields
         Field[] fields = Doctor.class.getDeclaredFields();
         LOGGER.info("Fields: " + Arrays.stream(fields).toList());
